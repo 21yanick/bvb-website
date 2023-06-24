@@ -1,0 +1,21 @@
+# .gitignore
+
+# Ignoriere Node modules
+/node_modules
+
+# Ignoriere Logs
+/logs
+*.log
+npm-debug.log*
+
+# Ignoriere Editor Verzeichnisse und Dateien
+.idea
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+
+# Ignoriere Betriebssystem spezifische Dateien
+.DS_Store
+Thumbs.db
