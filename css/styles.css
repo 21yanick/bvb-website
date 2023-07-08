@@ -57,6 +57,24 @@ main {
     margin-left: 220px; /* Fügt einen linken Rand hinzu, um Platz für das Header-Element zu schaffen */
 }
 
+/* Spieler und Ersatzspieler Stile */
+.field, .substitutes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.player {
+    flex-basis: 20%; /* Jeder Spieler nimmt 20% der Breite des Feldes ein */
+    margin: 10px;
+    text-align: center;
+}
+
+.player img {
+    width: 100%; /* Das Bild nimmt die volle Breite des .player Elements ein */
+    height: auto; /* Die Höhe des Bildes wird automatisch an die Breite angepasst, um das Seitenverhältnis zu erhalten */
+}
+
 /* Footer Stile */
 footer {
     background-color: #000000;
