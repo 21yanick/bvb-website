@@ -37,5 +37,5 @@ Dieses Projekt wurde im Rahmen des Kurses "Grundlagen der Webprogrammierung" ers
 Navigieren Sie durch die Webseite, um die verschiedenen Abschnitte und Features zu erkunden. Auf der Shop-Seite können Sie die Produktliste anzeigen und auf den "Kaufen"-Button klicken, um eine Bestätigungsnachricht zu erhalten.
 
 ## Hinweis
-
+Getestet mit Firefox und Chrome Browser.
 Dies ist ein Testprojekt und nicht für den tatsächlichen Gebrauch oder den Verkauf von Produkten vorgesehen.
