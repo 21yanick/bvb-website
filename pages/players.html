@@ -1,103 +1,326 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spieler | Borussia Dortmund</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
+
 <body>
     <header>
+        <a href="index.html">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="history.html">Geschichte</a></li>
-                <li><a href="players.html">Spieler</a></li>
+                <li><a href="players.html" class="active">Spieler</a></li>
                 <li><a href="coach.html">Trainer</a></li>
                 <li><a href="season-overview.html">Saisonübersicht</a></li>
-                <li><a href="fan-community.html">Fan-Community</a></li>
-                <li><a href="database.html">Datenbank</a></li>
+                <li><a href="fan-community.html">Community</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Spieler von Borussia Dortmund</h1>
-        <div class="field">
-            <!-- Spieler 1 bis Spieler 11 -->
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 1</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 2</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 3</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 4</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 5</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 6</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 7</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 8</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 9</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 1">
-                <h2>Spieler 10</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Spieler 11">
-                <h2>Spieler 11</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-        </div>
-        <h2>Ersatzspieler</h2>
-        <div class="substitutes">
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Ersatzspieler 1">
-                <h2>Ersatzspieler 1</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <div class="player">
-                <img src="../img/Haaland.jpg" alt="Ersatzspieler 2">
-                <h2>Ersatzspieler 2</h2>
-                <p>Kurze Beschreibung des Spielers, einschließlich seiner Position, seiner Statistiken und seiner Karriere-Highlights.</p>
-            </div>
-            <!-- Weitere Ersatzspieler können hier hinzugefügt werden. -->
-        </div>
+    <main class="player-main">
+        <section>
+            <h1>Spieler von Borussia Dortmund</h1>
+            <article class="field">
+                <!-- Gregor Kobel -->
+                <div class="player">
+                    <img src="../img/GregorKobel.jpg" alt="Gregor Kobel">
+                    <h2>Gregor Kobel</h2>
+                    <p>Position: Torwart | Trikotnummer: #1 | Geburtsdatum: 06.12.1997 | Nationalität: Schweiz |
+                        Marktwert:
+                        35.00 Mio €</p>
+                </div>
+
+                <!-- Marcel Laurenz Lotka -->
+                <div class="player">
+                    <img src="../img/MarcelLotka.jpg" alt="Marcel Laurenz Lotka">
+                    <h2>Marcel Laurenz Lotka</h2>
+                    <p>Position: Torwart | Trikotnummer: #35 | Geburtsdatum: 25.05.2001 | Nationalität: Deutschland,
+                        Polen |
+                        Marktwert: 1.5 Mio €</p>
+                </div>
+
+                <!-- Alexander Meyer -->
+                <div class="player">
+                    <img src="../img/AlexanderMeyer.jpg" alt="Alexander Meyer">
+                    <h2>Alexander Meyer</h2>
+                    <p>Position: Torwart | Trikotnummer: #33 | Geburtsdatum: 13.04.1991 | Nationalität: Deutschland |
+                        Marktwert: 1.00 Mio €</p>
+                </div>
+
+                <!-- Nico Schlotterbeck -->
+                <div class="player">
+                    <img src="../img/NicoSchlotterbeck.jpg" alt="Nico Schlotterbeck">
+                    <h2>Nico Schlotterbeck</h2>
+                    <p>Position: Abwehr – Innenverteidiger | Trikotnummer: #4 | Geburtsdatum: 01.12.1999 | Nationalität:
+                        Deutschland | Marktwert: 40.00 Mio €</p>
+                </div>
+
+                <!-- Niklas Süle -->
+                <div class="player">
+                    <img src="../img/NiklasSüle.jpg" alt="Niklas Süle">
+                    <h2>Niklas Süle</h2>
+                    <p>Position: Abwehr – Innenverteidiger | Trikotnummer: #25 | Geburtsdatum: 03.09.1995 |
+                        Nationalität:
+                        Deutschland | Marktwert: 35.00 Mio €</p>
+                </div>
+
+                <!-- Mats Hummels -->
+                <div class="player">
+                    <img src="../img/MatsHummels.jpg" alt="Mats Hummels">
+                    <h2>Mats Hummels</h2>
+                    <p>Position: Abwehr – Innenverteidiger | Trikotnummer: #15 | Geburtsdatum: 16.12.1988 |
+                        Nationalität:
+                        Deutschland | Marktwert: 6.00 Mio €</p>
+                </div>
+
+                <!-- Soumaila Coulibaly -->
+                <div class="player">
+                    <img src="../img/SoumailaCoulibaly.jpg" alt="Soumaila Coulibaly">
+                    <h2>Soumaila Coulibaly</h2>
+                    <p>Position: Abwehr – Innenverteidiger | Trikotnummer: #44 | Geburtsdatum: 14.10.2003 |
+                        Nationalität:
+                        Frankreich, Mali | Marktwert: 1.00 Mio €</p>
+                </div>
+
+                <!-- Antonios Papadopulos -->
+                <div class="player">
+                    <img src="../img/AntoniosPapadopulos.jpg" alt="Antonios Papadopulos">
+                    <h2>Antonios Papadopulos</h2>
+                    <p>Position: Abwehr – Innenverteidiger | Trikotnummer: #18 | Geburtsdatum: 10.09.1999 |
+                        Nationalität:
+                        Deutschland, Griechenland | Marktwert: 600 Tsd €</p>
+                </div>
+
+                <!-- Ramy Bensebaini -->
+                <div class="player">
+                    <img src="../img/RamyBensebaini.jpg" alt="Ramy Bensebaini">
+                    <h2>Ramy Bensebaini</h2>
+                    <p>Position: Abwehr - Linker Verteidiger | Trikotnummer: #5 | Geburtsdatum: 16.04.1995 |
+                        Nationalität:
+                        Algerien | Marktwert: 20.00 Mio €</p>
+                </div>
+
+                <!-- Nico Schulz -->
+                <div class="player">
+                    <img src="../img/NicoSchulz.jpg" alt="Nico Schulz">
+                    <h2>Nico Schulz</h2>
+                    <p>Position: Abwehr - Linker Verteidiger | Trikotnummer: #14 | Geburtsdatum: 01.04.1993 |
+                        Nationalität:
+                        Deutschland | Marktwert: 1.00 Mio €</p>
+                </div>
+
+                <!-- Julian Ryerson -->
+                <div class="player">
+                    <img src="../img/JulianRyerson.jpg" alt="Julian Ryerson">
+                    <h2>Julian Ryerson</h2>
+                    <p>Position: Abwehr - Rechter Verteidiger | Trikotnummer: #26 | Geburtsdatum: 17.11.1997 |
+                        Nationalität:
+                        Norwegen | Marktwert: 13.00 Mio €</p>
+                </div>
+
+                <!-- Marius Wolf -->
+                <div class="player">
+                    <img src="../img/MariusWolf.jpg" alt="Marius Wolf">
+                    <h2>Marius Wolf</h2>
+                    <p>Position: Abwehr - Rechter Verteidiger | Trikotnummer: #17 | Geburtsdatum: 27.05.1995 |
+                        Nationalität:
+                        Deutschland | Marktwert: 10.00 Mio €</p>
+                </div>
+
+                <!-- Thomas Meunier -->
+                <div class="player">
+                    <img src="../img/ThomasMeunier.jpg" alt="Thomas Meunier">
+                    <h2>Thomas Meunier</h2>
+                    <p>Position: Abwehr - Rechter Verteidiger | Trikotnummer: #24 | Geburtsdatum: 12.09.1991 |
+                        Nationalität:
+                        Belgien | Marktwert: 5.00 Mio €</p>
+                </div>
+
+                <!-- Mateu Morey Bauza¨ -->
+                <div class="player">
+                    <img src="../img/MateuMoreyBauza.jpg" alt="Mateu Morey Bauza¨">
+                    <h2>Mateu Morey Bauza¨</h2>
+                    <p>Position: Abwehr - Rechter Verteidiger | Trikotnummer: #2 | Geburtsdatum: 02.03.2000 |
+                        Nationalität:
+                        Spanien | Marktwert: 1.00 Mio €</p>
+                </div>
+
+                <!-- Emre Can -->
+                <div class="player">
+                    <img src="../img/EmreCan.jpg" alt="Emre Can">
+                    <h2>Emre Can</h2>
+                    <p>Position: Mittelfeld - Defensives Mittelfeld | Trikotnummer: #23 | Geburtsdatum: 12.01.1994 |
+                        Nationalität: Deutschland, Türkei | Marktwert: 14.00 Mio €</p>
+                </div>
+
+                <!-- Salih Özcan -->
+                <div class="player">
+                    <img src="../img/SalihÖzcan.jpg" alt="Salih Özcan">
+                    <h2>Salih Özcan</h2>
+                    <p>Position: Mittelfeld - Defensives Mittelfeld | Trikotnummer: #6 | Geburtsdatum: 11.01.1998 |
+                        Nationalität: Türkei, Deutschland | Marktwert: 13.00 Mio €</p>
+                </div>
+
+                <!-- Abdoulaye Kamara -->
+                <div class="player">
+                    <img src="../img/AbdoulayeKamara.jpg" alt="Abdoulaye Kamara">
+                    <h2>Abdoulaye Kamara</h2>
+                    <p>Position: Mittelfeld - Defensives Mittelfeld | Trikotnummer: #32 | Geburtsdatum: 06.11.2004 |
+                        Nationalität: Frankreich, Guinea | Marktwert: 1.00 Mio €</p>
+                </div>
+
+                <!-- Giovanni Reyna -->
+                <div class="player">
+                    <img src="../img/GiovanniReyna.jpg" alt="Giovanni Reyna">
+                    <h2>Giovanni Reyna</h2>
+                    <p>Position: Mittelfeld - Offensives Mittelfeld | Trikotnummer: #7 | Geburtsdatum: 13.11.2002 |
+                        Nationalität: USA | Marktwert: 50.00 Mio €</p>
+                </div>
+
+                <!-- Julien Duranville -->
+                <div class="player">
+                    <img src="../img/JulienDuranville.jpg" alt="Julien Duranville">
+                    <h2>Julien Duranville</h2>
+                    <p>Position: Sturm - Rechtsaussen | Trikotnummer: #16 | Geburtsdatum: 05.05.2006 |
+                        Nationalität: Belgien | Marktwert: 8.50 Mio €</p>
+                </div>
+
+                <!-- Julian Brandt -->
+                <div class="player">
+                    <img src="../img/JulianBrandt.jpg" alt="Julian Brandt">
+                    <h2>Julian Brandt</h2>
+                    <p>Position: Mittelfeld - Offensives Mittelfeld | Trikotnummer: #10 | Geburtsdatum: 02.05.1996 |
+                        Nationalität: Deutschland | Marktwert: 35.00 Mio €</p>
+                </div>
+
+                <!-- Felix Nmecha -->
+                <div class="player">
+                    <img src="../img/FelixNmecha.jpg" alt="Felix Nmecha">
+                    <h2>Felix Nmecha</h2>
+                    <p>Position: Mittelfeld - Offensives Mittelfeld | Trikotnummer: #8 | Geburtsdatum: 10.10.2000 |
+                        Nationalität: Deutschland, England | Marktwert: 15.00 Mio €</p>
+                </div>
+
+                <!-- Göktan Gürpüz -->
+                <div class="player">
+                    <img src="../img/GöktanGürpüz.jpg" alt="Göktan Gürpüz">
+                    <h2>Göktan Gürpüz</h2>
+                    <p>Position: Mittelfeld - Offensives Mittelfeld | Trikotnummer: #42 | Geburtsdatum: 22.01.2003 |
+                        Nationalität: Deutschland, Türkei | Marktwert: 300.00 Tsd €</p>
+                </div>
+
+                <!-- Jamie Bynoe-Gittens -->
+                <div class="player">
+                    <img src="../img/JamieBynoe-Gittens.jpg" alt="Jamie Bynoe-Gittens">
+                    <h2>Jamie Bynoe-Gittens</h2>
+                    <p>Position: Sturm - Linksaussen | Trikotnummer: #43 | Geburtsdatum: 08.08.2004 |
+                        Nationalität: England, Barbados | Marktwert: 14.00 Mio €</p>
+                </div>
+
+                <!-- Karim Adeyemi -->
+                <div class="player">
+                    <img src="../img/KarimAdeyemi.jpg" alt="Karim Adeyemi">
+                    <h2>Karim Adeyemi</h2>
+                    <p>Position: Sturm - Linksaussen | Trikotnummer: #27 | Geburtsdatum: 18.01.2002 | Nationalität:
+                        Deutschland, Nigeria | Marktwert: 40.00 Mio €</p>
+                </div>
+
+                <!-- Donyell Malen -->
+                <div class="player">
+                    <img src="../img/DonyellMalen.jpg" alt="Donyell Malen">
+                    <h2>Donyell Malen</h2>
+                    <p>Position: Sturm - Mittelstürmer | Trikotnummer: #21 | Geburtsdatum: 19.01.1999 | Nationalität:
+                        Niederlande | Marktwert: 30.00 Mio €</p>
+                </div>
+
+                <!-- Youssoufa Moukoko -->
+                <div class="player">
+                    <img src="../img/YoussoufaMoukoko.jpg" alt="Youssoufa Moukoko">
+                    <h2>Youssoufa Moukoko</h2>
+                    <p>Position: Sturm - Mittelstürmer | Trikotnummer: #18 | Geburtsdatum: 20.11.2004 | Nationalität:
+                        Deutschland, Kamerun | Marktwert: 20.00 Mio €</p>
+                </div>
+
+                <!-- Thorgan Hazard -->
+                <div class="player">
+                    <img src="../img/ThorganHazard.jpg" alt="Thorgan Hazard">
+                    <h2>Thorgan Hazard</h2>
+                    <p>Position: Sturm - Linksaußen | Trikotnummer: #16 | Geburtsdatum: 29.03.1993 | Nationalität:
+                        Belgien |
+                        Marktwert: 28.00 Mio €</p>
+                </div>
+
+                <!-- Marco Reus -->
+                <div class="player">
+                    <img src="../img/MarcoReus.jpg" alt="Marco Reus">
+                    <h2>Marco Reus</h2>
+                    <p>Position: Sturm - Linksaußen | Trikotnummer: #11 | Geburtsdatum: 31.05.1989 | Nationalität:
+                        Deutschland | Marktwert: 20.00 Mio €</p>
+                </div>
+            </article>
+        </section>
     </main>
+    <hr class="footer-transition">
     <footer>
-        <p>© 2023 Borussia Dortmund Club</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Über uns</h3>
+                <p>Wir sind mehr als nur ein Fußballclub. Wir sind eine Familie, eine Gemeinschaft, eine Leidenschaft.
+                </p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>Email: info@bvb.de</p>
+                <p>Telefon: +49 123 456 789</p>
+            </div>
+            <div class="footer-links">
+                <h3>Nützliche Links</h3>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="history.html">Geschichte</a></li>
+                    <li><a href="players.html">Spieler</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Folge uns</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="footer-logo">
+            <p>&copy; 2023 Borussia Dortmund Fan Webseite. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("mobile-menu");
+            const menu = document.querySelector("nav ul.menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
+
 </html>

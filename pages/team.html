@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | Borussia Dortmund</title>
+    <title>Team | Borussia Dortmund</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/contact.js"></script>
     <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 <body>
@@ -27,38 +26,24 @@
                 <li><a href="season-overview.html">Saisonübersicht</a></li>
                 <li><a href="fan-community.html">Community</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html" class="active">Kontakt</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
             </ul>
-        </nav>    </header>    
-    <main class="contact-main">
-        <h1 class="contact-title">Kontaktieren Sie uns</h1>
-        <p class="contact-text">Wenn Sie Fragen oder Anregungen haben, füllen Sie bitte das untenstehende Formular aus. Wir werden uns so schnell wie möglich bei Ihnen melden.</p>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        </nav>
+    </header>
+    <main class="team-page">
+        <h1>Unser Team</h1>
+        <p>Willkommen auf unserer Teamseite! Wir sind Yanick Rupp und Richard Bickard, Studierende im Kurs BBIN22.2a.IN214 für Grundlagen der Web-Programmierung an der HFTM in Grenchen. Im Rahmen dieses Kurses haben wir die Gelegenheit erhalten, unsere Fähigkeiten in HTML, CSS und PHP zu vertiefen und praktisch anzuwenden. Diese Webseite ist das Ergebnis unserer gemeinsamen Projektarbeit und dient als Plattform, um unsere Kenntnisse und Fertigkeiten zu präsentieren.</p>
+        <section class="team-members">
+            <div class="team-member">
+                <img src="../img/gigachad.png" alt="Yanick Rupp">
+                <h2>Yanick Rupp</h2>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="team-member">
+                <img src="../img/gigachad.png" alt="Richard Bickard">
+                <h2>Richard Bickard</h2>
             </div>
-            <div class="form-group">
-                <label for="subject">Betreff:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <input type="submit" value="Senden" class="submit-button">
-        </form>
-        <div class="popup">
-            <div class="popup-content">
-                <span class="popup-close">&times;</span>
-                <p class="popup-text">Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.</p>
-            </div>
-        </div>
+        </section>
     </main>
     <hr class="footer-transition">
     <footer>

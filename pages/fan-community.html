@@ -5,32 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fan-Community | Borussia Dortmund</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 <body>
     <header>
+        <a href="index.html">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="history.html">Geschichte</a></li>
                 <li><a href="players.html">Spieler</a></li>
                 <li><a href="coach.html">Trainer</a></li>
                 <li><a href="season-overview.html">Saisonübersicht</a></li>
-                <li><a href="fan-community.html">Fan-Community</a></li>
-                <li><a href="database.html">Datenbank</a></li>
+                <li><a href="fan-community.html" class="active">Community</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
+    </header>    
+    <main class="community-page">
         <h1>Fan-Community von Borussia Dortmund</h1>
-        <div class="fan-community">
-            <h2>Unsere Fans</h2>
-            <p>Hier wird eine Einführung in die Fan-Community von Borussia Dortmund gegeben, einschließlich Informationen über Fanclubs, Veranstaltungen und wie man Teil der Community werden kann.</p>
+        <div class="community-row">
+            <section class="community-section">
+                <h2>Fanclubs</h2>
+                <img src="../img/fanclub.jpg" alt="Fanclub" class="community-img">
+                <p>Werden Sie Mitglied in einem unserer zahlreichen Fanclubs und erleben Sie die Gemeinschaft der BVB-Fans hautnah.</p>
+            </section>
+            <section class="community-section">
+                <h2>Veranstaltungen</h2>
+                <img src="../img/event.jpg" alt="Veranstaltung" class="community-img">
+                <p>Verpassen Sie keine Veranstaltung mehr! Von Fanfesten bis zu Autogrammstunden, hier ist für jeden etwas dabei.</p>
+            </section>
         </div>
-        <!-- Weitere Abschnitte können hier hinzugefügt werden. -->
+        <div class="community-row">
+            <section class="community-section">
+                <h2>Soziale Projekte</h2>
+                <img src="../img/social.jpg" alt="Soziale Projekte" class="community-img">
+                <p>Engagieren Sie sich gemeinsam mit uns in sozialen Projekten und machen Sie einen Unterschied.</p>
+            </section>
+            <section class="community-section">
+                <h2>Online-Community</h2>
+                <img src="../img/online.jpg" alt="Online-Community" class="community-img">
+                <p>Treten Sie unserer Online-Community bei und tauschen Sie sich mit Fans aus der ganzen Welt aus.</p>
+            </section>
+        </div>
     </main>
+    <hr class="footer-transition">
     <footer>
-        <p>© 2023 Borussia Dortmund Club</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Über uns</h3>
+                <p>Wir sind mehr als nur ein Fußballclub. Wir sind eine Familie, eine Gemeinschaft, eine Leidenschaft.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>Email: info@bvb.de</p>
+                <p>Telefon: +49 123 456 789</p>
+            </div>
+            <div class="footer-links">
+                <h3>Nützliche Links</h3>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="history.html">Geschichte</a></li>
+                    <li><a href="players.html">Spieler</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Folge uns</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="footer-logo">
+            <p>&copy; 2023 Borussia Dortmund Fan Webseite. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("mobile-menu");
+            const menu = document.querySelector("nav ul.menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>

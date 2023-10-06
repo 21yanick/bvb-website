@@ -6,30 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borussia Dortmund - Startseite</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Startseite</a></li>
                 <li><a href="history.html">Geschichte</a></li>
                 <li><a href="players.html">Spieler</a></li>
-                <li><a href="coaches.html">Trainer</a></li>
-                <li><a href="season.html">Saisonübersicht</a></li>
-                <li><a href="fans.html">Fan-Community</a></li>
-                <li><a href="database.html">Datenbank</a></li>
+                <li><a href="coach.html">Trainer</a></li>
+                <li><a href="season-overview.html">Saisonübersicht</a></li>
+                <li><a href="fan-community.html">Community</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Willkommen auf der Borussia Dortmund Webseite</h1>
-        <p>Hier finden Sie alle Informationen über den Club, die Spieler, die Geschichte und vieles mehr.</p>
+    <main class="startpage">
+        <section class="intro">
+            <h1>Willkommen bei Borussia Dortmund</h1>
+            <p>Dein Tor zur Welt von Schwarz und Gelb.</p>
+        </section>
+        <section class="about-us">
+            <h2>Über uns</h2>
+            <p>Wir sind mehr als nur ein Fußballclub. Wir sind eine Familie, eine Gemeinschaft, eine Leidenschaft. Seit
+                unserer Gründung im Jahr 1909 haben wir zahlreiche Meisterschaften und Pokale gewonnen. Aber unser
+                wahrer Stolz sind unsere Fans, die uns durch dick und dünn begleiten.</p>
+        </section>
+        <section class="top-players">
+            <h2>Top Spieler</h2>
+            <p>Entdecke die Stars, die das Spiel machen.</p>
+            <div class="players-container">
+                <div class="player">
+                    <img src="../img/MarcoReus.jpg" alt="Marco Reus" class="player-image">
+                    <div class="player-caption">Marco Reus - Der Kapitän</div>
+                </div>
+                <div class="player">
+                    <img src="../img/GiovanniReyna.jpg" alt="Erling Haaland" class="player-image">
+                    <div class="player-caption">Giovanni Reyna - Der Stürmer</div>
+                </div>
+                <div class="player">
+                    <img src="../img/SoumailaCoulibaly.jpg" alt="Jadon Sancho" class="player-image">
+                    <div class="player-caption">Soumaila Coulibaly - Der Verteidiger</div>
+                </div>
+            </div>
+        </section>
+        <section class="upcoming-events">
+            <h2>Kommende Veranstaltungen</h2>
+            <p>Sei dabei, wenn Geschichte geschrieben wird.</p>
+            <ul class="upcoming-events-list">
+                <li>Heimspiel gegen Bayern München - 15. Juli 2023</li>
+                <li>Fanfest im Signal Iduna Park - 20. August 2023</li>
+                <li>Charity-Lauf für Kinder - 10. September 2023</li>
+            </ul>
+        </section>
+        <section class="video-section">
+            <h2>Highlights der Saison</h2>
+            <section class="video-container">
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/7K1PeiE8TZQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+        </section>
     </main>
+    <hr class="footer-transition">
     <footer>
-        <p>&copy; 2023 Borussia Dortmund Webseite. Alle Rechte vorbehalten.</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Über uns</h3>
+                <p>Wir sind mehr als nur ein Fußballclub. Wir sind eine Familie, eine Gemeinschaft, eine Leidenschaft.
+                </p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>Email: info@bvb.de</p>
+                <p>Telefon: +49 123 456 789</p>
+            </div>
+            <div class="footer-links">
+                <h3>Nützliche Links</h3>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="history.html">Geschichte</a></li>
+                    <li><a href="players.html">Spieler</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Folge uns</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="footer-logo">
+            <p>&copy; 2023 Borussia Dortmund Fan Webseite. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("mobile-menu");
+            const menu = document.querySelector("nav ul.menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>

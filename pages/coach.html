@@ -5,32 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trainer | Borussia Dortmund</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header class="header">
+        <a href="index.html">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav">
+            <ul class="menu">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="history.html">Geschichte</a></li>
                 <li><a href="players.html">Spieler</a></li>
-                <li><a href="coach.html">Trainer</a></li>
+                <li><a href="coach.html" class="active">Trainer</a></li>
                 <li><a href="season-overview.html">Saisonübersicht</a></li>
-                <li><a href="fan-community.html">Fan-Community</a></li>
-                <li><a href="database.html">Datenbank</a></li>
+                <li><a href="fan-community.html">Community</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h1>Trainer von Borussia Dortmund</h1>
-        <div class="coach">
-            <img src="../img/Klopp.jpg" alt="Trainer">
-            <h2>Name des Trainers</h2>
-            <p>Kurze Beschreibung des Trainers, einschließlich seiner Karriere-Highlights, seiner Philosophie und seiner Erfolge mit Borussia Dortmund.</p>
-        </div>
-    </main>
+    </header>    
+    <main class="coach-main">
+        <h1 class="title">Trainer von Borussia Dortmund</h1>
+        
+        <section class="coach-section">
+            <h2>Aktueller Trainer</h2>
+            <div class="coach-card">
+                <img src="../img/EdinTerzic.jpg" alt="Edin Terzic" class="coach-img">
+                <div class="coach-info">
+                    <h3>Edin Terzic</h3>
+                    <p>Edin Terzic übernahm im Dezember 2020 das Traineramt bei Borussia Dortmund. Unter seiner Führung gelang es dem Team, den DFB-Pokal 2021 zu gewinnen. Terzic ist bekannt für seine leidenschaftliche Herangehensweise und seine Fähigkeit, junge Spieler zu fördern.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="coach-section">
+            <h2>Legende Jürgen Klopp</h2>
+            <div class="coach-card">
+                <img src="../img/JürgenKlopp.jpg" alt="Jürgen Klopp" class="coach-img">
+                <div class="coach-info">
+                    <h3>Jürgen Klopp</h3>
+                    <p>Jürgen Klopp war von 2008 bis 2015 Trainer von Borussia Dortmund. Unter seiner Führung gewann der Club zwei Bundesliga-Titel und erreichte das Finale der UEFA Champions League 2013. Klopp ist bekannt für seinen "Heavy Metal"-Fußball und seine enge Bindung zu den Fans.</p>
+                </div>
+            </div>
+        </section>
+    </main>   
+    <hr class="footer-transition">
     <footer>
-        <p>© 2023 Borussia Dortmund Club</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Über uns</h3>
+                <p>Wir sind mehr als nur ein Fußballclub. Wir sind eine Familie, eine Gemeinschaft, eine Leidenschaft.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>Email: info@bvb.de</p>
+                <p>Telefon: +49 123 456 789</p>
+            </div>
+            <div class="footer-links">
+                <h3>Nützliche Links</h3>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="history.html">Geschichte</a></li>
+                    <li><a href="players.html">Spieler</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Folge uns</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="footer-logo">
+            <p>&copy; 2023 Borussia Dortmund Fan Webseite. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("mobile-menu");
+            const menu = document.querySelector("nav ul.menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>

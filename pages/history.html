@@ -6,36 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geschichte | Borussia Dortmund</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="logo-image">
+        </a>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Startseite</a></li>
-                <li><a href="history.html">Geschichte</a></li>
+                <li><a href="history.html" class="active">Geschichte</a></li>
                 <li><a href="players.html">Spieler</a></li>
                 <li><a href="coach.html">Trainer</a></li>
                 <li><a href="season-overview.html">Saisonübersicht</a></li>
-                <li><a href="fan-community.html">Fan-Community</a></li>
-                <li><a href="database.html">Datenbank</a></li>
+                <li><a href="fan-community.html">Community</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Geschichte von Borussia Dortmund</h1>
-        <p>
-            Borussia Dortmund ist ein Fußballverein aus Dortmund, Deutschland. Gegründet im Jahr 1909, hat der Verein
-            eine reiche Geschichte voller Höhen und Tiefen. Von den bescheidenen Anfängen bis hin zu den Triumphen auf
-            nationaler und internationaler Ebene, die Geschichte von Borussia Dortmund ist eine Geschichte von
-            Leidenschaft, Ausdauer und unvergesslichen Momenten.
-        </p>
-        <!-- Weitere Abschnitte zur Geschichte des Clubs können hier hinzugefügt werden. -->
+    <main class="history-content">
+        <div class="inner-content">
+            <h1>Geschichte von Borussia Dortmund</h1>
+            <section class="history-section">
+                <p>
+                    Borussia Dortmund, offiziell bekannt als Ballspielverein Borussia 09 e.V. Dortmund, hat eine reiche
+                    und
+                    bewegte Geschichte. Der Verein wurde am 19. Dezember 1909 in der nordrhein-westfälischen Stadt
+                    Dortmund
+                    gegründet. Der Name "Borussia" ist die lateinische Bezeichnung für Preußen, während
+                    "Ballspielverein"
+                    auf die Wurzeln des Vereins in verschiedenen Ballspielen hinweist.
+                    Die ersten Jahre des Vereins waren bescheiden. In den ersten Jahrzehnten ihres Bestehens spielten
+                    sie in
+                    lokalen Ligen und hatten erst 1936 ihren ersten Auftritt in der erstklassigen Gauliga, die damals
+                    die
+                    höchste Spielklasse im deutschen Fußball war. Aber dann begann der Aufstieg des Vereins.
+                    In den 1950er Jahren hatte Borussia Dortmund seine ersten großen Erfolge. 1956 und 1957 gewannen sie
+                    die
+                    deutsche Meisterschaft und 1965 gewannen sie den DFB-Pokal. 1966 erreichten sie einen Höhepunkt, als
+                    sie
+                    den Europapokal der Pokalsieger gewannen, indem sie den FC Liverpool besiegten. Sie waren der erste
+                    deutsche
+                    Verein, der einen europäischen Titel gewann.
+                    In den 1970er und 1980er Jahren durchlief der Verein jedoch eine schwierige Phase, die durch
+                    finanzielle
+                    Probleme und sportliche Misserfolge gekennzeichnet war. Es gab sogar eine Zeit, in der sie in die
+                    zweite
+                    Liga absteigen mussten.
+                    Die Wende kam in den 1990er Jahren unter der Führung des Trainers Ottmar Hitzfeld. Dortmund gewann
+                    1995
+                    und 1996 die Bundesliga und 1997 gewannen sie die Champions League durch einen Sieg gegen Juventus
+                    Turin.
+                    Diese Ära war von Spielern wie Matthias Sammer, Andreas Möller und Karl-Heinz Riedle geprägt.
+                    In den 2000er Jahren hatte Dortmund erneut mit finanziellen Schwierigkeiten zu kämpfen, aber sie
+                    konnten
+                    sich erholen und eine neue Ära des Erfolgs beginnen. Unter der Leitung von Trainer Jürgen Klopp
+                    gewannen
+                    sie 2011 und 2012 erneut die Bundesliga und erreichten 2013 das Finale der Champions League.
+                    Heute ist Borussia Dortmund bekannt für seine leidenschaftlichen Fans und das Signal Iduna Park
+                    Stadion,
+                    das als eines der atmosphärischsten in Europa gilt. Der Verein ist auch für seine Jugendarbeit
+                    bekannt und
+                    hat einige der besten Talente im Weltfußball hervorgebracht.
+                </p>
+                <img src="../img/founding.jpg" alt="Gründungsfoto">
+            </section>
+        </div>
     </main>
+    <hr class="footer-transition">
     <footer>
-        <p>&copy; 2023 Borussia Dortmund Webseite. Alle Rechte vorbehalten.</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Über uns</h3>
+                <p>Wir sind mehr als nur ein Fußballclub. Wir sind eine Familie, eine Gemeinschaft, eine Leidenschaft.
+                </p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>Email: info@bvb.de</p>
+                <p>Telefon: +49 123 456 789</p>
+            </div>
+            <div class="footer-links">
+                <h3>Nützliche Links</h3>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="history.html">Geschichte</a></li>
+                    <li><a href="players.html">Spieler</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Folge uns</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <img src="../img/logo.png" alt="Borussia Dortmund Logo" class="footer-logo">
+            <p>&copy; 2023 Borussia Dortmund Fan Webseite. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("mobile-menu");
+            const menu = document.querySelector("nav ul.menu");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>
