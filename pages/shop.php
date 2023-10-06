@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -25,28 +27,38 @@
                 <li><a href="coach.html">Trainer</a></li>
                 <li><a href="season-overview.html">Saisonübersicht</a></li>
                 <li><a href="fan-community.html">Community</a></li>
-                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="shop.php" class="active">Shop</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
                 <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>
     <main class="shop-page">
         <h1>Borussia Dortmund Shop</h1>
         <section class="product-grid">
-            <!-- Produkt 1 -->
-            <div class="product-card">
-                <img src="../img/product1.jpg" alt="Produkt 1">
-                <h3>Produkt 1</h3>
-                <p>€29.99</p>
-            </div>
-            <!-- Produkt 2 -->
-            <div class="product-card">
-                <img src="../img/product2.jpg" alt="Produkt 2">
-                <h3>Produkt 2</h3>
-                <p>€49.99</p>
-            </div>
-            <!-- Weitere Produkte können hier hinzugefügt werden -->
+            <?php
+            include '..\db_connect.php'; // Verbindung zur Datenbank herstellen
+
+            $sql = "SELECT id, product_name, description, price, image_url FROM products";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                // Produkte ausgeben
+                while ($row = $result->fetch_assoc()) {
+                    echo "<div class='product'>";
+                    echo "<img src='" . $row["image_url"] . "' alt='" . $row["product_name"] . "'>";
+                    echo "<h2>" . $row["product_name"] . "</h2>";
+                    echo "<p>" . $row["description"] . "</p>";
+                    echo "<p>Preis: " . $row["price"] . " CHF</p>";
+                    echo "<button class='buy-button'>Kaufen</button>";
+                    echo "</div>";
+                }
+            } else {
+                echo "Keine Produkte gefunden.";
+            }
+
+            $conn->close();
+            ?>
         </section>
     </main>
     <hr class="footer-transition">
@@ -84,15 +96,47 @@
             <p>&copy; 2023 Borussia Dortmund Fan Webseite. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+    <div class="modal" id="purchaseModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Super gemacht!</h2>
+            <p>Vielen Dank für den Produktkauf! <br>Dies ist nur ein Test Shop für unser Projekt in Grundlagen der Webprogrammierung an der HFTM.</p>
+        </div>
+    </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function() {
             const menuToggle = document.getElementById("mobile-menu");
             const menu = document.querySelector("nav ul.menu");
 
-            menuToggle.addEventListener("click", function () {
+            menuToggle.addEventListener("click", function() {
                 menu.classList.toggle("active");
             });
         });
     </script>
+    <script>
+        const modal = document.getElementById("purchaseModal");
+        const closeButton = document.querySelector(".close-button");
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const buyButtons = document.querySelectorAll(".buy-button");
+
+            buyButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    modal.style.display = "block";
+                });
+            });
+
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener("click", function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
